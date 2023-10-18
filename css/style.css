@@ -43,13 +43,13 @@ body {
   display: flex;
 }
 .menu__item + .menu__item{
-  margin-left: 30px;;
+  margin-left: 30px;
 }
 .menu__link{
   text-transform: uppercase;
   font-weight: 500;
   font-size: 18px;
-  color: #001E64;
+  color: #232222;
   line-height: 21px;
 }
 .menu__link:hover{
@@ -135,6 +135,9 @@ body {
   content: '';
 }
 .header_content-btn{
+
+}
+.header_content-btn{
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
   font-weight: 700;
@@ -147,6 +150,11 @@ body {
   display: inline-block;
   transform: translateY(-100px);
   position: absolute;
+  transition: all .3s;
+}
+.header_content-btn:hover{
+  background-color: #FFFFFF;
+  color: #001E64;
 }
 .header__content-box{
   display: flex;
@@ -155,6 +163,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #FFF;
+  background-color: rgba(255, 255, 255,1);
 }
 .header__content-link--active{
   font-weight: 700;
@@ -245,7 +254,12 @@ body {
   border-radius: 20px;
   border: 1px solid var(--, #001E64);
   margin-bottom: 131px;
-  cursor: pointer
+  cursor: pointer;
+  transition: all .3s;
+}
+.product__content-btn:hover{
+  background-color: #001E64;
+  color: #FFFFFF;
 }
 .seafood-box{
   background-image: url(../images/seafood-bg.jpg);
@@ -319,3 +333,68 @@ body {
   font-family: 'Roboto Slab', serif;
   font-size: 18px;
 }
+
+.contacts {
+  background-image: url(../images/contacts-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+.container {
+}
+.contacts__box {
+  margin-left: auto;
+  width: 390px;
+  background-color: #fff;
+  padding: 33px 0 20px;
+}
+.contacts__box-text {
+  width: 195px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  line-height: normal;
+  color: #001E64;
+  margin-bottom: 30px;
+}
+.contacts__box-list{
+  list-style: none;
+  font-size: 18px;
+  line-height: normal;
+}
+.contacts__box-item {
+  margin-top: 30px;
+}
+.contacts__box-item span {
+  display: block;
+}
+.footer {
+  padding: 25px 0 110px;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 45px 0 23px;
+}
+.footer__inner .menu{
+  padding-bottom: 30px;
+}
+.footer-social__list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-bottom: 22px;
+  align-items: center;
+}
+.footer-social__item + .footer-social__item {
+  margin-left: 10px;
+}
+.footer-social__link path{
+  transition: all .3s;
+}
+/*.footer-social__link::before path{
+  fill:#C4C4C4
+}*/
+.footer-social__link:hover path {
+  fill: #001E64;
+}
+
